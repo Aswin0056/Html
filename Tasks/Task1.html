@@ -1,0 +1,138 @@
+<!-- Create a Personal Profile Webpage with Inline and Block CSS -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY WORLD</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style> 
+        #bannerimage{
+          width: auto;
+          background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwmBMFji8J2goaKaHQf5LuHVW2iNTQGv177g&s");
+          height: 100px;
+          background-position: center;
+        }
+        
+        p { 
+            color: rgb(0, 0, 0);
+            text-align: center;
+         }
+         table,th,td { 
+            border: 1px solid black;
+            border-collapse: collapse;
+            height: 100px;width: 250px;
+            text-align: center;
+         }
+        dt 
+        {
+         font-weight: bold;
+        }
+        ol,ul {
+            text-align: center;
+        }
+        blockquote { 
+            background-color: #db8bd3; 
+            padding: 10px; 
+            }
+        footer {
+            background-color: rgb(151, 151, 151);
+            padding: 20px 10px;;
+            
+        }
+        h1 {
+        
+        font-family: Helvetica, sans-serif;
+         font-size: 25px;
+         font-weight: bold;
+         color: rgba(0, 0, 0, 0.527);
+         position: absolute;
+         
+        
+        }
+        </style> 
+</head>
+
+<body>
+    <h1>Welcome To My World</h1>
+    <div id="bannerimage"></div>
+
+    <header>
+    
+    <ul style="text-align: right;">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Hobbies</a>
+        <a href="#">Contact</a>
+        </ul>
+</header>
+
+    <h2>About Me</h2>
+    <h2>Hobbies</h2>
+    <h2>Contact Information</h2>
+    <center>
+    <img src="data:image/jpeg;base64,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" alt="image">
+    </center>
+        <h2 style="text-align: center;">My Profile</h2>
+    <p >My name is Kichu, I am from Kanyakumari<br>
+        This theory explains that the I was born in india<br>
+        india is an biggest and greatest country, it has many tourist places<br>
+        I have an big knowledge in <mark>python</mark> full stack.</p>
+    
+       <h2 style="text-align: center;"> My Favourite Books</h2>
+        <ol style="padding: 10px;list-style-position: inside;">
+            <li>War and Peace</li>
+            <li>On Liberty</li>
+            <li>Harry Potter</li>
+            <li>Republic</li>
+            <li>Invisible Man</li>
+        </ol>
+
+       <h2 style="text-align: center;"> My Favourite Activites</h2>
+        <ul style="list-style-position: inside;">
+            <li>Yoga</li>
+            <li>Running</li>
+            <li>Meditation</li>
+        </ul>
+    
+<center>
+  
+          <table>
+            <tr>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Location</th>
+            </tr>
+            <tr>
+                <td>Aswin</td>
+                <td>23</td>
+                <td>Kanyakumari</td>
+              </tr>
+          </table>
+
+          <h2>My Skills and Interest</h2>
+<dl>
+    <dt>Python Full Stack</dt>
+    <dd>Django</dd>
+    <dd>Html</dd>
+    <dd>Mysql</dd>
+    <dt>Computer Application</dt>
+    <dd>Java</dd>
+    <dd>Python</dd>
+  </dl>
+
+</center>
+
+<blockquote style="text-align: center;">
+He's a writer of horror stories. The magazine is looking for freelance writers. They identified the writer of the mysterious letter. She is my favorite French writer. She is also an wonderful Artist.
+</blockquote>
+
+<footer style="text-align: center;">
+    <a>LinkedIn</a> 
+    <a>Twitter</a> <i style="font-size:24px" class="fa">&#xf099;</i>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    </footer>
+
+</body>
+</html>
